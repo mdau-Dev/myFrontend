@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI
+    9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="delicacies.css">
+</head>
+<body>
+
+    <section class="header">   
+        <div class="nav">
+            <h1>Lamour Goodies</h1>
+            <nav class="mynav">
+                
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="jumbomeals.html">SiteMap</a>
+                    <a href="assessBackend.html">Assess Backend</a>
+                    <a href="#delicacy">Available Food</a>
+                    <a href="jumbomeals.html" >Jumbo menus</a>
+                    <a href="restaurant.html">Restaurants</a>
+                    <a href="#footer">About us</a>
+                    <button class="btn-login">Login</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper-form">
+            
+            <div class="login" >
+                <h2>Login</h2>
+                <form class="formLogin" name="formLogin">
+                    <div class="input-box" >
+                        <span class="icon">
+
+                        </span>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+
+                        </span>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                        
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#" class="regis">Forgot Password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="dont-have">
+                        <p>Don't have an Account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="register">
+                <h2>Register</h2>
+                <form class="formRegis" >
+                    <div class="input-box">
+                        <span class="icon">
+
+                        </span>
+                        <input type="text" name="name"  id="fname" required>
+                        <label>Username</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+
+                        </span>
+                        <input type="email" name="email" id="myemail" required>
+                        <label>Email</label>
+                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+
+                        </span>
+                        <input type="password" name="password" id="mypassword" required >
+                        <label>Password</label>
+                        
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">
+                            I agree to the terms & conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn" onclick="registerNew()">Register</button>
+                    <div class="dont-have">
+                        <p>Already has an Account?
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Tasty Delicious Foods....Kitui</p>
+            <p><em>weuwe.....utafraia</em></p>
+            <div class="order"><a href="#delicacy">Order Now</strong></a></div>
+           </div>
+
+
+        </section>
+    
+   
+
+
+    <!-- <--!delicacies section!--> 
+    <section class="delicacies">
+        <div class="wrapper-delicacies" >
+            <div class="delicacies-div" id="delicacy"></div>
+            <div class="cart-orders">
+                   <table border="3px">
+                    <tr><th>Name</th><th>Reg No.</th></tr>
+                    <tr><td>Peter Munene</td><td>D120/0574/2021</td></tr>
+                    <tr><td>Janet Mwalimu</td><td>D120/0551/2021</td></tr>
+                    <tr><td>Benjamin Nyabuto</td><td>D120/0569/2021</td></tr>
+                    <tr><td>Teddy Kelvin Mwangi</td><td>D120/0573/2021</td></tr>
+                    <tr><td>Joyceline Chemutai</td><td>D120/0082/2020</td></tr>
+                   </table>
+            </div>
+            <div class="myimages">
+                <div class="delicacies-header">
+                    <h1>Delicacies Available Now</h1>
+                    <h5><em>Just Order.......utafraia....</em></h5>
+                    
+                </div>
+                <div class="img1">
+                    <img src="image/pizza.jpg" alt="">
+                    <img src="image/br3.jpeg" alt="">
+                    <img src="image/blacktea.jpg" alt="">
+                    
+                </div>
+                <hr>
+                <div class="text">
+                    <p class="pizza"><em>Pizza Sumptuos</em></p>
+                    <p class="pizza"><em>BreakFast Jumbo</em></p>
+                    <p class="pizza"><em>Some Drinks Sumptuos</em></p>
+                </div>
+                <hr>
+                <div class="img1">
+                    <img src="image/chapo.jpeg" alt="" class="chapo">
+                    <img src="image/chicken.jpg" alt="" class="chicken">
+                    <img src="image/fried eggs.jpg" alt="" class="break">
+                </div>
+                <hr>
+                <div class="text">
+                    <p class="pizza"><em>Chapati golden Brown for dumbo</em></p>
+                    <p class="pizza"><em>A slaying fried chicken Spiced</em></p>
+                    <p class="pizza"><em>Fried eggs Mornings favourites</em></p>
+                </div>
+                <hr>
+                <div class="img1">
+                    <img src="image/pilau.jpg" alt="" class="pilau">
+                    <img src="image/bbb.jpg" alt="" class="mathings">
+                    <img src="image/br3.jpeg" alt="" class="break">
+                </div>
+                <hr>
+                <div class="text">
+                    <p class="pizza"><em>Pilau hapo hivo....Salaaale</em></p>
+                    <p class="pizza"><em>A colambo you should try...Greatness</em></p>
+                    <p class="pizza"><em>A warm fast BreakFast...Strong my Guyz</em></p>
+                </div>
+                <hr>
+                <div class="img1">
+                    <img src="image/mathings.jpg" alt="" class="mathings">
+                    <img src="image/matobosha nini nini.jpg" alt="" class="matobosha">
+                    <img src="image/matombosha.jpg" alt="" class="nini">
+                </div>
+                <hr>
+                <div class="text">
+                    <p class="pizza"><em>Pilau hapo hivo....Salaaale</em></p>
+                    <p class="pizza"><em>A colambo you should try...Greatness</em></p>
+                    <p class="pizza"><em>A warm fast BreakFast...Strong my Guyz</em></p>
+                </div>
+                <hr>
+                <div class="img1">
+                    <img src="image/fried rice.jpg" alt="" class="pilau">
+                    <img src="image/redLines.jpg" alt="" class="nini">
+                    <img src="image/wulala.jpg" alt="" class="matobosha">
+                </div>
+                <hr>
+                <div class="text">
+                    <p class="pizza"><em>Pilau hapo hivo....Salaaale</em></p>
+                    <p class="pizza"><em>A colambo you should try...Greatness</em></p>
+                    <p class="pizza"><em>A warm fast BreakFast...Strong my Guyz</em></p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <div class="dataCollected">
+        <ul class="names">
+            <li></li>
+        </ul>
+    </div>
+
+
+    <footer class="footer" id="footer">
+        <div class="footer"></div>
+    <div class="footer-container">
+        <div class="row-footer">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                <a href="#" onclick="collectData">Special Orders</a>
+                <a href="#">Hire us for Events</a>
+                <a href="#">Join our Community</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Privacy policy</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                <a href="#">FAQ</a>
+                <a href="#">Recipes</a>
+                <a href="#">Payment Options</a>
+                <a href="#">Find delicacy</a>
+                <a href="#">Report fraud</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+<script src="login.js"></script>
+<script>
+   
+</script>
+</body>
+</html>

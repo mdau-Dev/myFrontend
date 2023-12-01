@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delicacies-header{
+    background-color:rgb(10, 10, 1);
+    padding-top: 20px;
+    border-radius: 3px;
+}
+.delicacies-header h1{
+    text-align: start;
+    color: #d1ca80;
+    padding-left: 30px;
+}
+.delicacies-header h5{
+    text-align: start;
+    color: rgb(252, 180, 92);
+    padding-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.cart-orders{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 35%;
+    min-height: 400px;
+}
+.wrapper-delicacies{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+
+}
+table{
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    border-width: 3px;
+    border-color: #e2d00c;
+    margin-top: 30px;
+}
+tr{
+    padding: 5px;
+}
+td{
+    padding: 5px;
+}
+th{
+    padding: 5px;
+}
+.wrapper-delicacies::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.myimages{
+    width: 75%;
+    float: right;
+}
+.img1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.img1 img{
+    max-height: 250px;
+    border-radius:5px;
+    margin-left: auto;
+    width: 31%;
+    filter:contrast(0.5);
+    filter: brightness(0.5);
+}
+.img1 img:hover{
+    background-color: #e2d00c;
+}
+.text{
+    display: flex;
+    justify-content: space-around;
+}
+.text p{
+    width: 30%;
+    color: rgb(252, 180, 92);
+}

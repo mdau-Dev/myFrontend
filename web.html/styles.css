@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'popons',sans-serif;
+    background-color:brown;
+    overflow-x: hidden;
+}
+.background{
+    width: 99%;
+    height: 100vh;
+    background-image: url(image/bbb.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.header{ 
+    height: 90vh;
+    position: relative;
+    width: 100%;
+    }
+.navbar{
+    height: 110px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+}
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:brown;
+}
+.navbar-box h3{
+    color: black;
+    margin-top: 50px;
+    padding: 10px;
+}
+.heading-tertiary{
+    font-size: 3.5rem;
+}
+.navbar-list{
+    list-style: none;
+    font-size: 2rem;
+}
+    .navbar-box h2{
+        color: black;
+    
+}
+.navbar-item{
+    display: inline-block;
+}
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color:black;
+    padding: 3rem;
+    transition:all.2s ease;
+    text-transform: uppercase;
+    font-size: 100%;
+
+}
+.navbar-link:hover{
+    background-color: white;
+    color: black;
+}
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color:rgb(85, 20, 20);
+    margin: 1rem;
+}
+.header-box{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    /* text-transform: uppercase; */
+    color:rgb(69, 69, 119);
+}
+.heading-primary{
+    font-size: 6.5rem;
+    font-weight: 400;
+    letter-spacing: 20px;
+    color: rgb(211, 149, 240);
+}
+.just{
+    font: Arial;
+    font-size: smaller;
+    font-weight: 100;
+    color: #fcf944;
+    letter-spacing: 20px;
+}
+#Meal-Order{
+    color: rgb(247, 247, 9);
+    font-weight: 500;
+    font-size: 5rem;
+    font: 'Poppins',sans-serif;
+    letter-spacing: 100px;
+}
+.lead{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.delicacies{
+    padding: 10rem;
+    background-color:brown;
+}
+.delicacies h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 600;
+    padding-top: 0;
+}
+.input-box{
+    padding: 0rem;
+}
+nav{
+    color: green;
+    padding: 20px;
+    place-items: centre;
+}
+ nav  ul a {
+    display: block;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+nav ul a:hover{
+    color: orange;
+}
+ .delicacies{
+    display: block;
+    width: 100%;
+}
+.delicacies h2{
+    color:black;
+}
+.delicacies nav ul p{
+    color:black;
+}
+.delicacies img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{
+    transform:rotate(0deg);
+}
+100%{
+    transform:rotate(360deg);
+}
+}
+.delicacies h3{
+    text-align: left;
+}
+.jumbo h1{
+    font-size: 100px;
+}
+
+.jumbo h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    align-content: center;
+    font-size: medium;
+    color:black;
+    
+}
+.jumbo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    
+    
+
+}
+.jumbo-container .jumbo-box{
+    flex:1 1 30rem;
+    background-color:brown;
+    text-decoration:black;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+.jumbo-container .jumbo-box h1{
+    color:black;
+}
+.jumbo-container .jumbo-box h3{
+    color: black;
+}
+.jumbo-container .jumbo-box span{
+    
+    color:black;
+}
+    .jumbo-container .jumbo-box .breakfast img {
+width: 10%;
+min-height: 20%;
+float: left;
+    }
+
+    .jumbo-container .jumbo-box img {
+        display: block;
+        margin: auto;
+        padding: 5%;
+        height: 30%;
+        width:40%; 
+        
+       
+        
+    }
+    .navbar-box{
+        padding: 10px;
+        margin-bottom: 5%;
+    }
+    
+    .restaurant{
+        background-color:brown;
+    }
+        .restaurant  h1{
+            font-family: 100px;
+          text-transform: uppercase; 
+         margin-left: 50%;
+          padding:10px;
+          color: black;
+          
+
+        }
+        .restaurant .wrapper{
+            width:25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            
+            
+            
+        }
+          .img {
+            width: 50%;
+            height: 100%;
+            position: relative;
+            
+            
+        }
+          img{
+        width: 50%;
+        height: 100%;
+        display: block;
+        margin: auto;
+        
+        
+       }
+        
+       form {
+        border: 3px solid #f1f1f1;
+      }
+      
+      /* Full-width inputs */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Set a style for all buttons */
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Extra style for the cancel button (red) */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the avatar image inside this container */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      
+      /* Avatar image */
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+      }
+      
+      /* The "Forgot password" text */
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+          .content{
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            position: absolute;
+            background:brown ;
+            display: flex;
+            justify-content: center;align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.6s;
+        
+          }  
+          .content:hover{
+            opacity:1 ;
+          }
+          .content h1{
+            font-size: 45px;
+            color: blue;
+            margin-bottom: 15px;
+
+          }
+            .content p{
+                font-size: 19px;
+                color: blue;
+                text-align: center;
+            }
+        
+            .content > *{
+                transform: translateY(25px);
+                transition: transform o.6s;
+            }
+            .content > *{
+                transform: translateY(0px);
+                
+            }
+        
+
+            .wrapper {
+    width: 420px;
+    background-color:brown;
+    border: 2px solid white;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px white;
+    color: white;
+    border-radius: 10px;
+    padding:30px 40px;
+}
+    
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    background:brown;
+    margin: 30px 0;
+    
+   
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: brown;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color:black;
+}
+ .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+ .remember-forget label input {
+    accent-color: black;
+    text-decoration: none;
+}
+ .remember-forget a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background:brown;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer; 
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+ .wrapper .register-link{
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+
+    }
+     .register-link p a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+    .register-link p a :hover{
+        text-decoration: underline;
+    }
+
+.Contact {
+    background-color:brown;
+}
+.Contact h2 {
+    margin-bottom: 3rem;
+   
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.Contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Contact form .input-box input,
+.Contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background:brown;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.Contact form .input-box input{
+    width: 49%;
+
+}
+.Contact form textarea {
+    resize: none;
+}
+.Contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.Section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: brown;
+
+}
+.Section .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.Section .Container .Content-section{
+    float: right;
+    width: 55%;
+}
+.Section .Container .Content-section .image-section{
+    float: left;
+    width: 40%;
+}
+.Section .Container .Content-section .image-section img{
+    width: 50%;
+    height: auto;
+}
+.Section .Container .Content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: orange;
+}
+.Section .Container .Content-section .Content h3{
+    margin-top: 20px;
+    color: orange;
+    font-size: 19px;
+}
+.Section .Container .Content-section .Content p{
+    margin-top: 10px;
+    font-family:  sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+.Section.Container .Content-section .Content .button{
+    margin-top: 30px;
+}
+.Section .Container .Content-section .Content .button a{
+    background-color: white;
+    padding:12px 40px ;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.Section .Container .Content-section .Content .button a:hover{
+    background-color: aqua;
+    color: antiquewhite;
+}
+
+Section .Container .Content-section .social i:hover{
+    color: white;
+}
+
+ .Section .Container .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: blue;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: black;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.Section .Container .Content-section .social-media a:hover {
+    background: brown;
+    color: black;
+    box-shadow: white
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover {
+    box-shadow: none;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: brown;
+}
+.footer-text p {
+    font-size: 1.6rem;
+    color:black;
+
+}
+.footer-iconTop a {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background:black;
+    border-radius: 2rem;
+    transition: .5s ease;
+    color: green;
+}
+.footer-iconTop a:hover{
+    box-shadow: yellow;
+}
+.footer-iconTop a i {
+    font-size: 1.4rem;
+    color:black;
+}
+
+
+   
+
+

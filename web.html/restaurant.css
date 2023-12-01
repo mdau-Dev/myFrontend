@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: #200909;
+}
+.wrapper-wrapper{
+    width: 93%;
+    margin: auto;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.navHolder{
+    width: 100%;
+    min-height: 100vh;
+   background-image: url(image/restjanet.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation: md 30s alternate infinite ease-in-out;
+}
+@keyframes md{
+    30%{
+        background-image: url(image/Names\ -\ Word\ 11_28_2023\ 4_52_11\ PM.png);
+        transform: rotate(100%);
+    }
+    60%{
+        background-image: url(image/restTeddy.jpg);
+    }
+    75%{
+        background-image: url(image/restmdau.jpg);
+    }
+}
+
+.mynav2{
+    display: flex;
+    
+}
+.mynav2 h1{
+    color: rgb(187, 236, 9);
+    font-size: 30px;
+    
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.mynav2 h1:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.mynav2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 130px;
+    border-radius: 10px;
+    
+}
+
+.mynav2 a{
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px;
+    border-radius: 7px;
+    margin-left: 10px;
+    
+}
+.mynav2 a:hover{
+    background-color: rgb(82, 54, 4);
+    color: rgb(247, 245, 244);
+}
+
+
+
+.services{
+    width: 100%;
+    background-color: rgb(187, 109, 7) ;
+}
+.infoWrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(65, 44, 7);
+    border-radius: 10px;
+}
+.infoWrapper ul{
+    list-style: none;
+}
+.infoWrapper li{
+    padding: 15px;
+}
+.infoWrapper a{
+    text-decoration: none;
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+}
+.infoWrapper a:hover{
+    background-color: black;
+    color: chartreuse;
+}
+#info p{
+    padding: 10px;
+    font-size: 20px;
+    color: beige;
+    text-transform: capitalize;
+}

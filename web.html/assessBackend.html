@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assess Backend</title>
+
+    <link rel="stylesheet" href="jumbo.css">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    
+    <div class="wrapper-div">
+
+        <div class="nav">
+            <h1>Lamour Goodies</h1>
+            <nav class="mynav">
+                
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="jumbomeals.html">SiteMap</a>
+                    <a href="assessBackend.html">Assess Backend</a>
+                    <a href="#delicacy">Available Food</a>
+                    <a href="jumbomeals.html" >Jumbo menus</a>
+                    <a href="restaurant.html">Restaurants</a>
+                    <a href="#footer">About us</a>
+                </ul>
+            </nav>
+        </div>
+  
+    <Table  id="tablez" border="5px" cell-padding="10px">
+        <button class="show" onclick="fetchAllData()">ShowAll</button>
+        
+
+    </Table>
+    <div class="theFooter">
+    <footer class="footer" id="footer">
+        <div class="footer"></div>
+    <div class="footer-container">
+        <div class="row-footer">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                <a href="#" onclick="collectData">Special Orders</a>
+                <a href="#">Hire us for Events</a>
+                <a href="#">Join our Community</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Privacy policy</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                <a href="#">FAQ</a>
+                <a href="#">Recipes</a>
+                <a href="#">Payment Options</a>
+                <a href="#">Find delicacy</a>
+                <a href="#">Report fraud</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+
+    <script>
+        alert("Click Show all to fetch all the data from database and in case the data do not show...please check console log")
+     function fetchAllData(){
+            fetch("http://localhost:8084/student/v1/itsmdaucode/details/allmembers.php",{
+                headers:{
+                    // 'Content-Type':'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(jsonData =>{
+                console.log(jsonData);
+                
+
+                let row='<tr><th>id</th><th>Customer Name</th><th>Customer Email</th><th>Customer Passwords</th></tr>';
+
+                // let data=JSON.stringify(jsonData);
+                // console.log(data);
+                jsonData.map(values =>{
+                    console.log(values);
+                    row += `<tr><td>${values.id}</td><td>${values.name}
+                        </td><td>${values.email}</td><td>${values.password}</td></tr>`;
+
+                    
+                });
+                document.getElementById('tablez').innerHTML=row;
+                
+            })
+            .catch(error =>console.log(error));
+            
+        }
+    </script>
+</body>
+</html>
